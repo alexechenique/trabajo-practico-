@@ -1,0 +1,164 @@
+/* ==========================================
+   link a la paleta de colores: https://www.schemecolor.com/fallout-vault-boy-colors.php
+   ========================================== */
+
+:root {
+    --azul-oscuro: #325886;
+    --azul: #447AB9;
+    --azul-claro: #82A7D6;
+    --amarillo: #FEF265;
+    --crema: #FCE8A4;
+    --rosa-claro: #FEEED4;
+    --text-dark: #1b2838;
+}
+
+body {
+    background-color: var(--rosa-claro);
+    color: var(--text-dark);
+    font-family: 'Courier New', Courier, monospace; /* Para que la letra parezca de maquina de escribir */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* ==========================================
+   ENCABEZADO Y NAVEGACIÓN
+   ========================================== */
+
+header {
+    background-color: var(--azul-oscuro);
+    color: var(--rosa-claro);
+    padding: 2rem 1rem;
+    text-align: center;
+    border-bottom: 5px solid var(--amarillo);
+}
+
+header h1 {
+    color: var(--amarillo);
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px #000;
+}
+
+header p {
+    color: var(--crema);
+    font-style: italic;
+    font-size: 1.1rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+nav li a {
+    color: var(--rosa-claro);
+    background-color: var(--azul);
+    text-decoration: none;
+    padding: 8px 16px;
+    border: 2px solid var(--azul-claro);
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+nav li a:hover {
+    background-color: var(--amarillo);
+    color: var(--azul-oscuro);
+    border-color: var(--amarillo);
+}
+
+/* ==========================================
+   CONTENIDO PRINCIPAL (MAIN)
+   ========================================== */
+
+main {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+}
+
+section { 
+    background-color: var(--crema);
+    border: 2px solid var(--azul);
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 4px 4px 0px var(--azul-oscuro);
+}
+
+h2 {
+    color: var(--azul-oscuro);
+    border-bottom: 2px dashed var(--azul); /* Esto añade la linea punteada despeus de un h2 */
+    padding-bottom: 0.5rem;
+    margin-top: 0;
+    text-transform: uppercase;
+}
+
+h3, h4 {
+    color: var(--azul);
+}
+
+/* ==========================================
+   ENLACES Y TEXTOS DESTACADOS
+   ========================================== */
+
+a {
+    color: var(--azul-oscuro);
+    font-weight: bold;
+}
+
+a:hover {
+    color: var(--azul);
+}
+
+strong {
+    color: var(--azul-oscuro);
+}
+
+/* ==========================================
+   IMÁGENES Y ARTÍCULOS
+   ========================================== */
+
+article {
+    margin: 1.5rem 0;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border: 4px solid var(--azul-oscuro);
+    background-color: #fff;
+    padding: 4px; /* Aca se agrega un espacio/padding alrededor de la imagen para el efecto de marco */
+    box-shadow: 3px 3px 0px var(--azul); /* Esto le agrega la sombra azul alrededor de la imagen */
+}
+
+/* ==========================================
+   PIE DE PÁGINA (FOOTER)
+   ========================================== */
+
+footer {
+    background-color: var(--azul-oscuro);
+    color: var(--crema);
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 3rem;
+    border-top: 4px solid var(--amarillo);
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: var(--amarillo);
+}
+
+footer a:hover {
+    color: var(--azul-claro);
+}
