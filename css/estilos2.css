@@ -12,12 +12,17 @@
     --text-dark: #1b2838;
 }
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     background-color: var(--rosa-claro);
     color: var(--text-dark);
-    font-family: 'Courier New', Courier, monospace; /* Para que la letra parezca de maquina de escribir */
-    margin: 0;
-    padding: 0;
+    font-family: 'B612 Mono', monospace; /* Para que la letra parezca de maquina de escribir */
+    font-size: 1rem;
     line-height: 1.6;
 }
 
@@ -96,14 +101,21 @@ section {
 
 h2 {
     color: var(--azul-oscuro);
+    font-size: 1.8rem;
     border-bottom: 2px dashed var(--azul); /* Esto añade la linea punteada despeus de un h2 */
     padding-bottom: 0.5rem;
     margin-top: 0;
     text-transform: uppercase;
+    text-shadow: 1px 1px #a7a6a6;
 }
 
 h3, h4 {
     color: var(--azul);
+    font-size: 1.3rem;
+}
+
+p {
+    margin-bottom: 1rem;
 }
 
 /* ==========================================
@@ -126,6 +138,10 @@ strong {
 /* ==========================================
    IMÁGENES Y ARTÍCULOS
    ========================================== */
+.btn-activo {
+    background-color: var(--amarillo);
+    color: var(--azul-oscuro);
+}
 
 article {
     margin: 1.5rem 0;
@@ -153,6 +169,10 @@ footer {
     margin-top: 3rem;
     border-top: 4px solid var(--amarillo);
     font-size: 0.9rem;
+}
+
+footer p {
+    margin-bottom: 0.5rem;
 }
 
 footer a {
