@@ -47,6 +47,10 @@ header h1 {
     text-shadow: 2px 2px #000;
 }
 
+header a:hover {
+    color: #FCE8A4; 
+}
+
 header p {
     color: var(--crema);
     font-style: italic;
@@ -123,7 +127,7 @@ p {
    ========================================== */
 
 a {
-    color: var(--azul-oscuro);
+    color: var(--crema);
     font-weight: bold;
 }
 
@@ -157,6 +161,9 @@ img {
     box-shadow: 3px 3px 0px var(--azul); /* Esto le agrega la sombra azul alrededor de la imagen */
 }
 
+aside{
+    background-color: var(--azul-claro)
+}
 /* ==========================================
    PIE DE PÁGINA (FOOTER)
    ========================================== */
