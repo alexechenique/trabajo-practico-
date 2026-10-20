@@ -27,62 +27,66 @@ body {
 }
 
 /* ==========================================
-   ENCABEZADO Y NAVEGACIÓN
+   ENCABEZADO Y NAVEGACIÓN - VERSION BOOTSTRAP
    ========================================== */
 
 header {
     background-color: var(--azul-oscuro);
-    color: var(--rosa-claro);
-    padding: 2rem 1rem;
-    text-align: center;
-    border-bottom: 5px solid var(--amarillo);
 }
 
-header h1 {
+/* Contenedor de la barra de navegación */
+.bg-yermo {
+    background-color: var(--azul-oscuro) !important;
+    border-bottom: 5px solid var(--amarillo);
+    padding: 0.75rem 1rem;
+}
+
+/* Titlo en la navbar */
+.navbar-brand .brand-title {
     color: var(--amarillo);
-    font-size: 2.5rem;
-    margin-bottom: 0.5rem;
+    font-size: 1.8rem;
+    font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 2px;
     text-shadow: 2px 2px #000;
 }
 
-header a:hover {
-    color: #FCE8A4; 
-}
-
-header p {
+.navbar-brand .brand-subtitle {
     color: var(--crema);
     font-style: italic;
-    font-size: 1.1rem;
+    font-size: 0.9rem;
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin-top: 1.5rem;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 15px;
-}
-
-nav li a {
-    color: var(--rosa-claro);
+/* Botones de navegacin */
+.bg-yermo .nav-link {
+    color: var(--rosa-claro) !important;
     background-color: var(--azul);
     text-decoration: none;
-    padding: 8px 16px;
+    padding: 8px 16px !important;
     border: 2px solid var(--azul-claro);
     font-weight: bold;
     text-transform: uppercase;
     font-size: 0.9rem;
+    margin: 3px;
+    text-align: center;
     transition: all 0.3s ease;
 }
 
-nav li a:hover {
-    background-color: var(--amarillo);
-    color: var(--azul-oscuro);
-    border-color: var(--amarillo);
+.bg-yermo .nav-link:hover,
+.bg-yermo .nav-link.active {
+    background-color: var(--amarillo) !important;
+    color: var(--azul-oscuro) !important;
+    border-color: var(--amarillo) !important;
+}
+
+/* Boton Hamburguesa */
+.navbar-toggler {
+    border: 2px solid var(--amarillo) !important;
+    background-color: var(--azul);
+}
+
+.navbar-toggler:focus {
+    box-shadow: 0 0 0 0.25rem var(--amarillo) !important;
 }
 
 /* ==========================================
@@ -127,7 +131,7 @@ p {
    ========================================== */
 
 a {
-    color: var(--crema);
+    color: var(--azul-oscuro);
     font-weight: bold;
 }
 
@@ -139,13 +143,14 @@ strong {
     color: var(--azul-oscuro);
 }
 
-/* ==========================================
-   IMÁGENES Y ARTÍCULOS
-   ========================================== */
 .btn-activo {
     background-color: var(--amarillo);
     color: var(--azul-oscuro);
 }
+
+/* ==========================================
+   IMÁGENES Y ARTÍCULOS
+   ========================================== */
 
 article {
     margin: 1.5rem 0;
@@ -161,12 +166,13 @@ img {
     box-shadow: 3px 3px 0px var(--azul); /* Esto le agrega la sombra azul alrededor de la imagen */
 }
 
+/* ==========================================
+   ASIDE Y PIE DE PÁGINA (FOOTER)
+   ========================================== */
+
 aside{
     background-color: var(--azul-claro)
 }
-/* ==========================================
-   PIE DE PÁGINA (FOOTER)
-   ========================================== */
 
 footer {
     background-color: var(--azul-oscuro);
