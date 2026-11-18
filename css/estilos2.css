@@ -149,6 +149,20 @@ strong {
 }
 
 /* ==========================================
+   FLEXBOX
+   ========================================== */
+
+.contenedor-tarjetas-flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.contenedor-tarjetas-flex > div {
+    flex: 1 1 300px;
+}
+
+/* ==========================================
    IMÁGENES Y ARTÍCULOS
    ========================================== */
 
