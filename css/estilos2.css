@@ -209,3 +209,72 @@ footer a {
 footer a:hover {
     color: var(--azul-claro);
 }
+
+/* ==========================================
+   ESTILOS PARA EL FORMULARIO DE CONTACTCO.HTML
+   ========================================== */
+
+#form-contacto {
+    background-color: var(--crema) !important;
+    border: 2px solid var(--azul) !important;
+    box-shadow: 4px 4px 0px var(--azul-oscuro);
+}
+
+#form-contacto .form-label {
+    color: var(--azul-oscuro) !important;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+#form-contacto .form-control {
+    background-color: #ffffff;
+    border: 2px solid var(--azul);
+    color: var(--text-dark);
+    font-family: 'B612 Mono', monospace;
+}
+
+#form-contacto .form-control:focus {
+    background-color: #ffffff;
+    border-color: var(--amarillo);
+    box-shadow: 0 0 0 0.25rem rgba(254, 242, 101, 0.5);
+    color: var(--text-dark);
+}
+
+#form-contacto .btn-primary {
+    background-color: var(--azul);
+    border: 2px solid var(--azul-oscuro);
+    color: var(--amarillo);
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 2px 2px 0px var(--azul-oscuro);
+    transition: all 0.2s ease;
+}
+
+#form-contacto .btn-primary:hover {
+    background-color: var(--amarillo);
+    color: var(--azul-oscuro);
+    border-color: var(--azul-oscuro);
+}
+
+/* ==========================================
+   ESTILOS PARA CARDS
+   ========================================== */
+
+.card {
+    background-color: var(--crema) !important;
+    border: 2px solid var(--azul) !important;
+    box-shadow: 4px 4px 0px var(--azul-oscuro) !important;
+}
+
+.card .card-body {
+    background-color: var(--crema) !important;
+    color: var(--text-dark);
+}
+
+.card .card-title {
+    color: var(--azul-oscuro) !important;
+    font-weight: bold;
+    text-transform: uppercase;
+}
